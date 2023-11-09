@@ -48,8 +48,8 @@ impl State {
         // fn function((t, u, p, l, e))
         match message {
             Message::ChangeColor(r, g, b) => self.change_color((r, g, b)),
-            Message::Echo(String) => self.echo(String),
-            Message::Move(Point) => self.move_position(Point),
+            Message::Echo(s) => self.echo(s),
+            Message::Move(p) => self.move_position(p),
             Message::Quit => self.quit(),
         }
     }
